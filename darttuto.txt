@@ -1,0 +1,3 @@
+dartba: csinaljal egy kulon mappat C meghajto oszt oda toltsed le (https://dart-tutorial.com/introduction-and-basics/dart-install/#google_vignette)
+.dart kiterjesztes (duh)
+flutter extention-t toltsed lefele
