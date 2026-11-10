@@ -1,44 +1,52 @@
 import 'dart:io';
 
 void main() {
-  print("Kérek egy egész számot");
-  int? szam = int.parse(stdin.readLineSync()!);
-  szam % 2 == 0 ? print("Páros!") : print("Páratlan!");
+  // 1.
+  print("szam: ");
+  int szam = int.parse(stdin.readLineSync()!);
 
-  if (szam <= 5 && szam >= 1) {
-    if (szam == 5)
-      print("Jeles!");
-    else if (szam == 4)
-      print("Jó!");
-    else if (szam == 3)
-      print("Közepes!");
-    else if (szam == 2)
-      print("Elégséges!");
-    else
-      print("Elégtelen!");
-  } else
-    print("Érveénytelen osztályzat!");
+  // 2.
+  szam % 2 == 0 ? print("paros") : print("paratlan");
 
+  //3.
+  print("-----IF-----");
+  if (szam == 1)
+    print("elegtelen");
+  else if (szam == 2)
+    print("elegseges");
+  else if (szam == 3)
+    print("kozepes");
+  else if (szam == 4)
+    print("jo");
+  else if (szam == 5)
+    print("jeles");
+  else
+    print("tartomanyon kivul van");
+
+  //4.
+  print("-----SWITCH-----");
   switch (szam) {
     case 1:
-      print("Elégtelen!");
+      print("elegtelen");
       break;
     case 2:
-      print("Elégséges!");
+      print("elegseges");
       break;
     case 3:
-      print("Közepes!");
+      print("kozepes");
       break;
     case 4:
-      print("Jó!");
+      print("jo");
       break;
     case 5:
-      print("Jeles!");
+      print("jeles");
       break;
     default:
-      print("Érvénytelen osztályzat!");
-      break;
+      print("tartomanyon kivul van");
   }
 
-  assert(szam < 6 && szam > 0, print("Tartományon kívül van!"));
+  //5.
+  print("-----ASSERT-----");
+  assert(szam > 0 && szam < 6, "tartomanyon kivul van");
+  // assert(false, "tartomanyon kivul van");
 }
