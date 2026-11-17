@@ -1,5 +1,5 @@
 void main() {
-    print(sum([1.0, 2.0, 3.0, 4.0, 5.0, -5.0, -1.0])); // 9.0
+    print(sum([1.0, 2.0, 3.0, 4.0, 5.0, -5.0, -1.0])); // 
     print(oddOnesOut([1, 2, 1, 2, 1, 3])); // [2, 2]
     print(flattenAndSort([[1,2,3],[4,5]])); // [1, 2, 3, 4, 5]
     print(duplicateCount("abcde")); // 0
